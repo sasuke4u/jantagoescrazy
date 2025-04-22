@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Janta Goes Crazy</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🌐 Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <h2 class="logo">🌟 Janta Goes Crazy</h2>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Articles</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button id="darkModeToggle">🌓</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🧠 Header -->
+  <header>
+    <div class="container">
+      <h1>🌟 𝓙𝓪𝓷𝓽𝓪 𝓖𝓸𝓮𝓼 𝓒𝓻𝓪𝔃𝔂</h1>
+      <p>✨ A Place for Cool Stuff & Latest Articles ✨</p>
+    </div>
+  </header>
+
+  <!-- 🔍 Search -->
+  <div class="container search-bar">
+    <input type="text" id="searchInput" placeholder="Search articles...">
+  </div>
+
+  <!-- 📰 Articles -->
+  <main class="container">
+    <section class="content">
+      <h2>📰 Latest Articles</h2>
+      <p>Start sharing your knowledge, tips, or news here.</p>
+      
+      <div class="articles">
+        <div class="article-card">
+          <h3>5 Fun Tech Gadgets to Try</h3>
+          <p>Explore the coolest tech releases of the season. From smart home tools to quirky gadgets...</p>
+          <span class="tag">Tech</span>
+        </div>
+        <div class="article-card">
+          <h3>DIY Room Decor on a Budget</h3>
+          <p>Create your own decor magic without breaking the bank. Get crafty today!</p>
+          <span class="tag">DIY</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔥 Trending Section -->
+    <section class="trending">
+      <h3>🔥 Trending Now</h3>
+      <div class="trending-cards">
+        <div class="trending-card">
+          <img src="path/to/image.jpg" alt="Trending Image 1" />
+          <a href="#">Top 10 Netflix Shows to Binge</a>
+        </div>
+        <div class="trending-card">
+          <img src="path/to/image.jpg" alt="Trending Image 2" />
+          <a href="#">Budget Travel Tips for 2025</a>
+        </div>
+        <div class="trending-card">
+          <img src="path/to/image.jpg" alt="Trending Image 3" />
+          <a href="#">Ultimate Guide to AI Tools</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 📬 Newsletter -->
+    <section class="newsletter">
+      <h3>📬 Join Our Newsletter</h3>
+      <form>
+        <input type="email" placeholder="Your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- 🛍 Shop Section -->
+    <section class="shop">
+      <h3>🛍 Visit Our Shop</h3>
+      <p>Check out exclusive merchandise and deals!</p>
+      <button class="shop-button">Shop Now</button>
+    </section>
+
+    <!-- 💰 Support Section -->
+    <section class="support">
+      <h3>💰 Support Us</h3>
+      <p>Enjoying our content? Consider supporting us!</p>
+      <button class="donate-button">Donate</button>
+    </section>
+
+    <!-- 📢 Featured Article -->
+    <section class="featured-article">
+      <h3>✨ Featured Article of the Month</h3>
+      <div class="article-card featured">
+        <h4>Discover the Best Smart Home Gadgets for 2025</h4>
+        <p>Take a look at the most innovative smart home devices that are changing the way we live!</p>
+        <span class="tag">Tech</span>
+      </div>
+    </section>
+
+    <!-- 💬 Comments via Disqus -->
+    <section class="comments">
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = document.title;
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://EXAMPLE.disqus.com/embed.js'; // Replace EXAMPLE with your Disqus shortname
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    </section>
+
+    <!-- 🛑 Google Ads Placeholder -->
+    <section class="ads">
+      <h3>🛑 Sponsored</h3>
+      <div class="ad-placeholder">
+        <p>Your Ad Here</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 🔗 Footer with Socials -->
+  <footer>
+    <p>© 2025 𝓙𝓪𝓷𝓽𝓪 𝓖𝓸𝓮𝓼 𝓒𝓻𝓪𝔃𝓎. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+      <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
